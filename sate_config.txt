@@ -1,0 +1,81 @@
+[clustalw2]
+path = /home/sbreiff/src/satesrc-v2.2.7-2013Feb15/sate-core/bin/clustalw2
+
+[commandline]
+aligned = True
+auto = False
+datatype = protein
+input = /home/sbreiff/StentorKinome/ePKs_named_hmmalign_trim.fasta
+job = ePKs_sate
+keepalignmenttemps = False
+keeptemp = False
+multilocus = False
+raxml_search_after = False
+two_phase = False
+untrusted = False
+
+[fakealigner]
+path = 
+
+[faketree]
+path = 
+
+[fasttree]
+args = 
+model = -wag -gamma
+options = 
+path = /home/sbreiff/src/satesrc-v2.2.7-2013Feb15/sate-core/bin/fasttree
+
+[mafft]
+path = /home/sbreiff/src/satesrc-v2.2.7-2013Feb15/sate-core/bin/mafft
+
+[muscle]
+path = /home/sbreiff/src/satesrc-v2.2.7-2013Feb15/sate-core/bin/muscle
+
+[opal]
+path = /home/sbreiff/src/satesrc-v2.2.7-2013Feb15/sate-core/bin/opal.jar
+
+[padaligner]
+path = 
+
+[prank]
+path = /home/sbreiff/src/satesrc-v2.2.7-2013Feb15/sate-core/bin/prank
+
+[probalign]
+path = /home/sbreiff/src/satesrc-v2.2.7-2013Feb15/sate-core/bin/probalign
+
+[randtree]
+path = 
+
+[raxml]
+args = 
+model = 
+path = /home/sbreiff/src/satesrc-v2.2.7-2013Feb15/sate-core/bin/raxml
+
+[sate]
+after_blind_iter_term_limit = -1
+after_blind_iter_without_imp_limit = 1
+after_blind_time_term_limit = -1.0
+after_blind_time_without_imp_limit = -1.0
+aligner = mafft
+blind_after_iter_without_imp = -1
+blind_after_time_without_imp = -1.0
+blind_after_total_iter = -1
+blind_after_total_time = -1.0
+blind_mode_is_final = True
+break_strategy = centroid
+iter_limit = -1
+iter_without_imp_limit = -1
+max_mem_mb = 1024
+max_subproblem_frac = 0.100200400802
+max_subproblem_size = 200
+merger = muscle
+move_to_blind_on_worse_score = True
+num_cpus = 16
+output_directory = /home/sbreiff/StentorKinome/ePKs_sate
+return_final_tree_and_alignment = False
+start_tree_search_from_current = True
+time_limit = -1.0
+time_without_imp_limit = -1.0
+tree_estimator = fasttree
+

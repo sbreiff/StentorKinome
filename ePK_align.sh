@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # align to profile hmm
-hmmalign --trim PKinase.hmm ePKs_named.fasta > ePKs_named_hmmalign.selex
+hmmalign --trim --outformat selex PKinase.hmm ePKs_named.fasta > ePKs_named_hmmalign.selex
 
 # convert to fasta format
 python selex2fasta.py ePKs_named_hmmalign.selex ePKs_named_hmmalign.fasta
